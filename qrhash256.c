@@ -256,7 +256,6 @@ void DebugBinaryRawString(const uint8_t *binary, size_t len) {
     printf("\r\n");
 }
 
-#ifdef MAIN_HMAC
 int main(int argc, char **argv) {
     char *key = strdup(argv[1]);
     char *data = strdup(argv[2]);
@@ -271,4 +270,4 @@ int main(int argc, char **argv) {
     DebugBinaryString(opt_hash, QR_HASH_SIZE);
     DebugBinaryRawString(opt_hash, QR_HASH_SIZE);
 }
-#endif
+
