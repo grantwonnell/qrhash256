@@ -11,6 +11,7 @@ It provides both a standalone hashing function and an **HMAC (RFC 2104)** implem
 - 📜 RFC 2104–compliant HMAC implementation
 - 🖥️ Simple C code, no external dependencies
 - ⚡ Lightweight and fast to compile and run
+- 🔧 **Easily customizable number of rounds** for tuning speed vs. diffusion
 
 ---
 
