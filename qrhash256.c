@@ -16,7 +16,7 @@
 #define ROTL32(v, n) ((v << n) | (v >> (32 - n)))
 #define ROTL32DP(v, a, b) ROTL32(v, ((a + b) % (19)) + 5)
 
-/* stores 32 ints in Little Endian */
+/* stores 32 bit ints in Little Endian */
 /* pretty beefy hash | change number of rounds in HashRoundAll */
 /* custom hmac implementation (padding is changed) */
 
@@ -270,4 +270,5 @@ int main(int argc, char **argv) {
     DebugBinaryString(opt_hash, QR_HASH_SIZE);
     DebugBinaryRawString(opt_hash, QR_HASH_SIZE);
 }
+
 
