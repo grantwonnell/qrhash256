@@ -20,3 +20,5 @@ It provides both a standalone hashing function and an **HMAC (RFC 2104)** implem
 ### Compile
 ```bash
 gcc qrhash.c
+./a.out "hmac_key" "hash string"
+./a.out "secret_key" "Hello, World!"
